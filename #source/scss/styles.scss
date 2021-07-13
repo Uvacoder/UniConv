@@ -309,7 +309,7 @@ select {
 	}
 }
 
-@media screen and (max-height: 700px) and (orientation: landscape) {
+@media screen and (max-height: 800px) and (orientation: landscape) {
 	.app__body_dropdown-btn,
 	.app__body_dropdown {
 		display: block;
@@ -333,16 +333,17 @@ select {
 			}
 
 			&_unit {
-				@include grid-pos(8, 12, 1, 2);
+				@include grid-pos(1, 5, 3, 4);
 			}
 		}
 		&__switch-button {
 			@include grid-pos(6, 7, 2, 3);
 			margin: -4rem;
+			transform: rotate(90deg);
 		}
 		&__output {
 			&_value {
-				@include grid-pos(1, 5, 3, 4);
+				@include grid-pos(8, 12, 1, 2);
 			}
 			&_unit {
 				@include grid-pos(8, 12, 3, 4);

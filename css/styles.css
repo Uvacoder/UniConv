@@ -497,7 +497,7 @@ select {
   }
 }
 
-@media screen and (max-height: 700px) and (orientation: landscape) {
+@media screen and (max-height: 800px) and (orientation: landscape) {
   .app__body_dropdown-btn,
   .app__body_dropdown {
     display: block;
@@ -527,12 +527,12 @@ select {
     grid-row-end: 2;
   }
   .converter__input_unit {
-    -ms-grid-column: 8;
-        grid-column-start: 8;
-    grid-column-end: 12;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
   }
   .converter__switch-button {
     -ms-grid-column: 6;
@@ -542,14 +542,16 @@ select {
         grid-row-start: 2;
     grid-row-end: 3;
     margin: -4rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .converter__output_value {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 5;
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 4;
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 12;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
   }
   .converter__output_unit {
     -ms-grid-column: 8;
