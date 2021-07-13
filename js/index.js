@@ -23,12 +23,14 @@ const calcOutput = (input, from, to) => {
 };
 
 const setUnits = () => {
-	fetch('../currencies.json')
+	// fetch('../currencies.json')
+	fetch(
+		'https://raw.githubusercontent.com/glebhubarevich/UniConv/e285504c2b706f4971f87e5b9c73c3d29841b064/currencies.json'
+	)
 		.then((request) => request.json())
 		.then((data) => (currencies = data))
 		.then(() => {
 			for (const c of Object.keys(currencies)) {
-				console.log(currencies[c]);
 				const html = `<option value="${currencies[c].currency_code}">${currencies[c].currency_name}</option>`;
 				inputUnitSelector.append(html);
 				outputUnitSelector.append(html);
