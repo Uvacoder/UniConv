@@ -309,7 +309,7 @@ select {
 	}
 }
 
-@media screen and (max-height: 800px) and (orientation: landscape) {
+@media screen and (max-height: 600px) and (orientation: landscape) {
 	.app__body_dropdown-btn,
 	.app__body_dropdown {
 		display: block;
